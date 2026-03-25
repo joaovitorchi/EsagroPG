@@ -1,0 +1,155 @@
+<!-- ===================== index.html ===================== -->
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/icon.png" />
+    <title>ESAGRO</title>
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-overlay">
+        <img src="img/logo.png" />
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="about container fade-up">
+      <div class="about-img">
+        <img src="img/fachada.webp" alt="Empresa" />
+      </div>
+      <div class="about-text">
+        <h2>Conheça a nossa empresa</h2>
+        <p>
+          A ESAGRO é uma empresa comprometida em levar tecnologia, qualidade e
+          eficiência ao campo. Atuando na região dos Campos Gerais, oferecemos
+          soluções completas para produtores que buscam maior produtividade e
+          resultados consistentes em suas lavouras.
+        </p>
+        <p>
+          Trabalhamos com um portfólio selecionado de fertilizantes, sementes e
+          produtos para nutrição vegetal, sempre alinhados às mais modernas
+          práticas do agronegócio. Nosso foco vai além da venda: buscamos
+          entender a realidade de cada cliente para oferecer as melhores
+          soluções de forma personalizada.
+        </p>
+        <p>
+          Com atendimento próximo e suporte técnico especializado, a ESAGRO se
+          posiciona como uma parceira estratégica do produtor rural,
+          contribuindo para o crescimento sustentável e o sucesso no campo.
+        </p>
+      </div>
+    </section>
+
+    <!-- SUSTENTABILIDADE -->
+    <section class="sustentabilidade">
+      <div class="container">
+        <div class="sust-top fade-up">
+          <h2>O que nos move</h2>
+          <p>
+            Nossa atuação no campo é guiada por valores sólidos, visão de
+            crescimento e uma missão clara: levar tecnologia, resultado e
+            confiança ao produtor rural.
+          </p>
+        </div>
+
+        <div class="grid">
+          <div class="info-card fade-up">
+            <img src="img/card1.png" alt="Missão" />
+            <h3>Missão</h3>
+            <p>
+              Entregar soluções inovadoras e sustentáveis para o agronegócio,
+              gerando produtividade, rentabilidade e confiança para o produtor
+              rural.
+            </p>
+          </div>
+
+          <div class="info-card fade-up">
+            <img src="img/card2.png" alt="Visão" />
+            <h3>Visão</h3>
+            <p>
+              Ser referência nacional em fornecimento de insumos e tecnologias
+              para o agro, reconhecida pela excelência no relacionamento e pelo
+              impacto positivo no campo.
+            </p>
+          </div>
+
+          <div class="info-card fade-up">
+            <img src="img/card3.png" alt="Valores" />
+            <h3>Valores</h3>
+            <p>
+              <strong>Confiança:</strong> Relações sólidas e transparentes com
+              clientes e parceiros..<br />
+              <strong>Sustentabilidade:</strong> Compromisso com práticas que
+              preservem o futuro do agro.<br />
+              <strong>Inovação:</strong> Soluções modernas para desafios atuais
+              e futuros do produtor.<br />
+              <strong>Excelência:</strong> Qualidade em produtos, serviços e no
+              atendimento.<br />
+              <strong>Parceria:</strong> Estar lado a lado com o cliente em cada
+              ciclo produtivo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARCEIROS -->
+    <section class="parceiros container">
+      <h2 class="fade-up">Nossos Parceiros</h2>
+
+      <div class="cards">
+        <div class="card fade-up"><img src="img/alltech.png" /></div>
+        <div class="card fade-up"><img src="img/fortech.png" /></div>
+        <div class="card fade-up"><img src="img/maxisolo.png" /></div>
+        <div class="card fade-up"><img src="img/solcera.png" /></div>
+        <div class="card fade-up"><img src="img/vitales.png" /></div>
+        <div class="card fade-up"><img src="img/vitasoil.png" /></div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contato">
+      <div class="overlay container fade-up">
+        <h2>Entre em contato conosco</h2>
+        <a href="https://wa.me/5542999140336" class="btn" target="_blank"
+          >Fale com nosso time de vendas <i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="container footer">
+      <p>Telefone: (42) 99914-0336</p>
+      <p>Email: contato@esagropg.com.br</p>
+      <p>Instagram: @esagropg</p>
+    </footer>
+
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        });
+      });
+
+      document
+        .querySelectorAll(".fade-up")
+        .forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
